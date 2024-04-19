@@ -26,6 +26,6 @@ wordcount = {
 function Pandoc(el)
     -- skip metadata, just count body:
     el.blocks:walk(wordcount)
-    print(words .. " words in body")
+    print("Words in text: " .. words)
     os.exit(0)
 end
